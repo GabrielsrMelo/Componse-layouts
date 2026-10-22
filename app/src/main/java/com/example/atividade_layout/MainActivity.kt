@@ -97,12 +97,35 @@ fun TelaInicial(
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Bold
             )
-            Text(
-                text = "LIVES: 👾👾👾",
-                color = Color.White,
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold
-            )
+             Row() {
+                 Text(
+                     text = "LIVES:",
+                     color = Color.White,
+                     fontSize = 20.sp,
+                     fontWeight = FontWeight.Bold
+                 )
+                 AndroidEnemy(
+                     modifier = Modifier
+                         .size(30.dp)
+                         .padding(0.dp),
+                     color = Color.Green
+                 )
+
+                 AndroidEnemy(
+                     modifier = Modifier
+                         .size(30.dp)
+                         .padding(0.dp),
+                     color = Color.Green
+                 )
+
+                 AndroidEnemy(
+                     modifier = Modifier
+                         .size(30.dp)
+                         .padding(0.dp),
+                     color = Color.Green
+                 )
+
+             }
         }
 
 
